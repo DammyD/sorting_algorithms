@@ -36,6 +36,7 @@ void print_list(const listint_t *list);
 void bubble_sort(int *array, size_t size);
 void swap_nodes(listint_t **list, listint_t *l, listint_t *r);
 void swap_items(int *array, size_t l, size_t r);
+void swap_ints(int *a, int *b);
 void insertion_sort_list(listint_t **list);
 void insertion_sort_list2(listint_t **list);
 void selection_sort(int *array, size_t size);
@@ -46,8 +47,15 @@ listint_t *get_tail(listint_t **list);
 void shell_sort(int *array, size_t size);
 void cocktail_sort_list(listint_t **list);
 void counting_sort(int *array, size_t size);
+void max_heapify(int *array, size_t size, size_t base, size_t root);
+void heap_sort(int *array, size_t size);
+void radix_sort(int *array, size_t size);
+int get_max(int *array, int size);
+void radix_counting_sort(int *array, size_t size, int sig, int *buff);
+void radix_sort(int *array, size_t size);
 void top_down_merge(int *array, int *array_c, size_t l, size_t m, size_t r);
 void split_merge(int *array, int *array_c, size_t size, size_t l, size_t r);
+void merge_sort(int *array, size_t size);
 void quick_sort_range_lomuto(int *array, size_t low, size_t high, size_t size);
 
 #endif /*_SORT_H_*/
